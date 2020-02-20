@@ -1,0 +1,18 @@
+ip: 192.168.56.106
+memory: 2048
+cpus: 1
+provider: virtualbox
+#authorize: ~/.ssh/id_rsa.pub
+#keys:
+#    - ~/.ssh/id_rsa
+folders:
+    - map: './public'
+      to: /home/vagrant/code
+sites:
+    - map: localhost
+      to: /home/vagrant/code
+      php: "5.6"
+databases:
+    - homestead
+name: www
+hostname: www
